@@ -1,4 +1,4 @@
-﻿internal class Result
+﻿internal class Anagram
 {
     private Dictionary<string, int> AllPossibleSubStrings { get; set; } = new();
     private void AddSubString(string substring)
@@ -9,7 +9,7 @@
           SortandAdd(substring);
     }
 
-    private bool IsSubStringExist(string substring) => AllPossibleSubStrings.TryGetValue("tif", out var frequency);
+    private bool IsSubStringExist(string substring) => AllPossibleSubStrings.TryGetValue(substring, out var frequency);
 
     private void SortandAdd(string substring)
     {
@@ -37,10 +37,10 @@
     public int sherlockAndAnagrams(string s)
     {
         var length = s.Length;
-        var substringLength = 0;
+        var substringLength = 1;
         for (var i = 0; i < length; i++)
         {
-            for (var j = 0; j < j + substringLength; j++)
+            for (var j = 0;  (j + substringLength) < length; j++)
             {
                 var subtring = s.Substring(j, j+substringLength);
                 AddSubString(subtring);
@@ -59,6 +59,8 @@ internal class Solution
 {
     public static void Main(string[] args)
     {
-      
+        string input = Console.ReadLine() ?? string.Empty;
+        var anagram = new Anagram();
+        Console.WriteLine(anagram.sherlockAndAnagrams(input));
     }
 }
