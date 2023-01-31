@@ -1,18 +1,38 @@
 ﻿internal class Result
 {
-    /*
-     * Complete the 'sherlockAndAnagrams' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts STRING s as parameter.
-     */
-
-    public static int sherlockAndAnagrams(string s)
+    private Dictionary<string, int> AllPossibleSubStrings { get; set; } = new();
+    private int PossibleAnagrams { get; set; } = 0;
+    private void AddSubString(string substring)
     {
-        return 0;
+        if (IsSubStringExist(substring))
+            AllPossibleSubStrings[substring]+= 1;
+        else
+          Add(substring);
+    }
+
+    private bool IsSubStringExist(string substring) => AllPossibleSubStrings.TryGetValue("tif", out var frequency);
+
+    private void Add(string substring) => AllPossibleSubStrings.Add(substring,1);
+    
+    public int sherlockAndAnagrams(string s)
+    {
+        var length = s.Length;
+        for (var i = 0; i < length; i++)
+        {
+            
+
+        }
+
+        
+        
+        
+        return PossibleAnagrams;
     }
 }
 
+
+
+//The Solution Class is Provided By HackerRank
 internal class Solution
 {
     public static void Main(string[] args)
@@ -25,7 +45,8 @@ internal class Solution
         {
             var s = Console.ReadLine();
 
-            var result = Result.sherlockAndAnagrams(s);
+            var resultClass = new Result();
+            var result = resultClass.sherlockAndAnagrams(s);
 
             textWriter.WriteLine(result);
         }
