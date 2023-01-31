@@ -54,26 +54,11 @@
 
 
 
-//The Solution Class is Provided By HackerRank
+
 internal class Solution
 {
     public static void Main(string[] args)
     {
-        TextWriter textWriter = new StreamWriter(Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-        var q = Convert.ToInt32(Console.ReadLine().Trim());
-
-        for (var qItr = 0; qItr < q; qItr++)
-        {
-            var s = Console.ReadLine();
-
-            var resultClass = new Result();
-            var result = resultClass.sherlockAndAnagrams(s);
-
-            textWriter.WriteLine(result);
-        }
-
-        textWriter.Flush();
-        textWriter.Close();
+      
     }
 }

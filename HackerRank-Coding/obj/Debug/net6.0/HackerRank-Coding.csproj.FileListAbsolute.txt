@@ -1,0 +1,15 @@
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.csproj.AssemblyReference.cache
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.AssemblyInfoInputs.cache
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.AssemblyInfo.cs
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.csproj.CoreCompileInputs.cache
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\bin\Debug\net6.0\HackerRank-Coding.exe
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\bin\Debug\net6.0\HackerRank-Coding.deps.json
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\bin\Debug\net6.0\HackerRank-Coding.runtimeconfig.json
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\bin\Debug\net6.0\HackerRank-Coding.dll
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\bin\Debug\net6.0\HackerRank-Coding.pdb
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.dll
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\refint\HackerRank-Coding.dll
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.pdb
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\HackerRank-Coding.genruntimeconfig.cache
+C:\Users\avinash.sahani\RiderProjects\HackerRank-Coding\HackerRank-Coding\obj\Debug\net6.0\ref\HackerRank-Coding.dll
