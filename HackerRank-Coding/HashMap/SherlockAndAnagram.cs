@@ -3,18 +3,19 @@
     private Dictionary<string, int> AllPossibleSubStrings { get; set; } = new();
     private void AddSubString(string substring)
     {
-        if (IsSubStringExist(substring))
-            AllPossibleSubStrings[substring]+= 1;
+        if(string.IsNullOrEmpty(substring) || string.IsNullOrWhiteSpace(substring)) return;
+        var sortedString = GetSortedString(substring);
+        if (IsSubStringExist(sortedString))
+            AllPossibleSubStrings[sortedString]+= 1;
         else
-          SortandAdd(substring);
+          Add(sortedString);
     }
 
-    private bool IsSubStringExist(string substring) => AllPossibleSubStrings.TryGetValue(substring, out var frequency);
+    private bool IsSubStringExist(string substring) => AllPossibleSubStrings.TryGetValue(substring, out var value);
 
-    private void SortandAdd(string substring)
+    private void Add(string substring)
     {
-        var sortedString = GetSortedString(substring);
-        AllPossibleSubStrings.Add(sortedString,1);
+        AllPossibleSubStrings.Add(substring,1);
     }
 
     private string GetSortedString(string s)
@@ -28,8 +29,15 @@
         var possibleAnagrams = 0;
         foreach (var substring in AllPossibleSubStrings)
         {
-            if (substring.Value  == 2)
-                possibleAnagrams += 1;
+            if (substring.Value >= 2)
+            {
+                var freq = substring.Value - 1;
+                while (freq!=0)
+                {
+                    possibleAnagrams += freq;
+                    freq--;
+                }
+            }
         }
         return possibleAnagrams;
     }
@@ -37,19 +45,20 @@
     public int sherlockAndAnagrams(string s)
     {
         var length = s.Length;
-        var substringLength = 1;
-        for (var i = 0; i < length; i++)
+        for (var i = 1; i < length; i++)
         {
-            for (var j = 0;  (j + substringLength) < length; j++)
+            for (var j = 0; (i+j)<=length ; j++)
             {
-                var subtring = s.Substring(j, j+substringLength);
+
+                var subtring = s.Substring( j, i);
                 AddSubString(subtring);
             }
-            substringLength++;
+         
         }
         var possibleAnagrams = GetPossibleAnagrams();
         return possibleAnagrams;
     }
+    
 }
 
 
@@ -62,5 +71,7 @@ internal class Solution
         string input = Console.ReadLine() ?? string.Empty;
         var anagram = new Anagram();
         Console.WriteLine(anagram.sherlockAndAnagrams(input));
+        
+        
     }
 }
